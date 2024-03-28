@@ -1,33 +1,33 @@
-import { useState } from 'react'
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
-import { Doughnut } from 'react-chartjs-2'
+import React, { useState } from 'react';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
 
-ChartJS.register(ArcElement, Tooltip, Legend)
+// Registering required Chart.js components
+ChartJS.register(ArcElement, Tooltip, Legend);
 
-const data = {
+// Data for the doughnut chart
+const chartData = {
   labels: ['Product 1', 'Product 2', 'Product 3'],
-  // datasets is an array of objects where each object represents a set of data to display corresponding to the labels above. for brevity, we'll keep it at one object
   datasets: [
     {
       label: '',
       data: [20, 50, 30],
-      // you can set indiviual colors for each bar
-      backgroundColor: ['#ec4899', '#7e22ce', '#eef2ff'],
+      backgroundColor: ['#60a5fa', '#ff6384', '#eef2ff'], // Individual colors for each segment
       borderWidth: 1
     }
   ]
-}
+};
 
-export const options = {
+// Options for the doughnut chart
+const chartOptions = {
   responsive: true,
-  cutout: '65%',
+  cutout: '65%', // Adjusting the cutout size
   plugins: {
     legend: {
-      // position: 'top',
       display: false
     },
     title: {
-      display: false, //true
+      display: false,
       text: ''
     },
     label: {},
@@ -41,52 +41,59 @@ export const options = {
           font: {
             size: '40'
           },
-          color: 'black'
+          color: 'red'
         },
         {
           text: 'Due ≤ 60 Days',
           font: {
             size: '25'
           },
-          color: 'grey'
+          color: 'red'
         }
       ]
-    },
-    scales: {
-      x: {
-        border: {
-          display: false
-        },
-        grid: {
-          display: false
-        },
-        ticks: {
-          maxRotation: 0,
-          minRotation: 0,
-          autoSkip: false
-        }
+    }
+  },
+  scales: {
+    x: {
+      border: {
+        display: false
       },
-      y: {
-        border: {
-          display: false
-        },
-        grid: {
-          display: false
-        }
+      grid: {
+        display: false
+      },
+      ticks: {
+        maxRotation: 0,
+        minRotation: 0,
+        autoSkip: false
       }
     },
-    elements: {
-      bar: {
-        border: false,
-        borderSkipped: 'bottom'
+    y: {
+      border: {
+        display: false
+      },
+      grid: {
+        display: false
       }
     }
+  },
+  elements: {
+    center: {
+      text: 'center text',
+      border: false,
+      borderSkipped: 'bottom'
+    }
   }
-}
+};
 
+// Donutchart component
 const Donutchart = () => {
-  const [chartData, setChartData] = useState(data)
-  return <Doughnut options={options} data={chartData} />
-}
+  // State for chart data
+  const [data, setData] = useState(chartData);
+  
+  return (
+    <Doughnut options={chartOptions} data={data} />
+  );
+};
 
-export default Donutchart
+export default Donutchart;
+
