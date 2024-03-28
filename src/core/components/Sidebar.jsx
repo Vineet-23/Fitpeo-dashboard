@@ -1,5 +1,5 @@
-import React, { useId } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useId } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   BiLeftArrowCircle,
   BiSolidChevronRight,
@@ -10,28 +10,11 @@ import {
   BiSolidUserRectangle,
   BiCube,
   BiSolidChat
-} from 'react-icons/bi'
-import { BsChevronDown } from 'react-icons/bs'
-
-const menuItem = (menu, key) => {
-  return (
-    <li
-      key={key}
-      className='relative  text-white-900 text-sm rounded-md pl-2 py-2 my-1.5 transition-all duration-200 hover:bg-[#ce914b] cursor-pointer'
-    >
-      <NavLink to='#' className='flex justify-start items-center'>
-        <span className='mr-4'>{menu.icon}</span>
-        {menu.title}
-        <span className='absolute right-5'>
-          <BiSolidChevronRight />
-        </span>
-      </NavLink>
-    </li>
-  )
-}
+} from 'react-icons/bi';
+import { BsChevronDown } from 'react-icons/bs';
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
-  const uid = useId()
+  const uid = useId();
   const menuList = [
     {
       title: 'Dashboard',
@@ -63,15 +46,30 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       path: '',
       icon: <BiSolidChat />
     }
-  ]
+  ];
+
+  const menuItem = (menu, key) => (
+    <li
+      key={key}
+      className='relative text-white-900 text-sm rounded-md pl-2 py-2 my-1.5 transition-all duration-200 hover:bg-[#fecdd3] cursor-pointer'
+    >
+      <NavLink to='#' className='flex justify-start items-center'>
+        <span className='mr-4'>{menu.icon}</span>
+        {menu.title}
+        <span className='absolute right-5'>
+          <BiSolidChevronRight />
+        </span>
+      </NavLink>
+    </li>
+  );
 
   return (
     <>
       <aside
         className={
           isOpen
-            ? `fixed lg:static z-[100] flex flex-col translate-x-0 transition-all duration-300 w-[250px] bg-[#d7a66d] shadow-xl h-screen lg:block`
-            : `fixed lg:static flex flex-col translate-x-[-250px] w-[250px] bg-[#d7a66d] shadow-xl h-screen hidden`
+            ? `fixed lg:static z-[100] flex flex-col translate-x-0 transition-all duration-300 w-[250px] bg-[#b9cce2] shadow-xl h-screen lg:block`
+            : `fixed lg:static flex-col translate-x-[-250px] w-[250px] bg-[#b9cce2] shadow-xl h-screen hidden`
         }
       >
         <div className='flex flex-col h-[90vh]'>
@@ -87,20 +85,18 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               <BiLeftArrowCircle />
             </span>
           </h4>
-          <ul className='mx-3'>{menuList.map(menu => menuItem(menu, uid))}</ul>
+          <ul className='mx-3'>{menuList.map((menu, index) => menuItem(menu, index))}</ul>
         </div>
-        <div className='flex justify-between items-center rounded-md hover:bg-[#d7a66d] px-2 mb-8 mx-2'>
+        <div className='flex justify-between items-center rounded-md bg-[#fecdd3] px-2 mb-8 mx-2'>
           <div className='flex items-center justify-between gap-2 px-2 py-2 cursor-pointer'>
             <img
               className='h-[35px] w-[35px] rounded-full'
-              src='https://273774.fs1.hubspotusercontent-na1.net/hub/273774/hubfs/mp/themes/Act-Theme/images/act-quote-author-sample.jpg?noresize&width=180&height=180&name=act-quote-author-sample.jpg'
+              src='https://media.licdn.com/dms/image/C5603AQHlvs-EjpzvcQ/profile-displayphoto-shrink_100_100/0/1649521892886?e=1717027200&v=beta&t=VSo0hJmIUjiv8KEdy3KV6_taiRnJ-Cxblhb47LqVZuw'
               alt='user-pic'
             />
-            <div className=''>
-              <p className='text-white-900 text-xs text-left'>Vineet</p>
-              <p className='text-white-100 opacity-70 text-[0.7rem]'>
-                Project Manager
-              </p>
+            <div>
+              <p className='text-white-900 text-m text-left'>Vineet</p>
+              <p className='text-white-100 opacity-70 text-xs'>Project Manager</p>
             </div>
           </div>
 
@@ -110,7 +106,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         </div>
       </aside>
     </>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
