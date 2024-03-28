@@ -1,11 +1,11 @@
-import { lazy, useId } from 'react'
+import React, { useId } from 'react';
 
 const Table = () => {
-  const uid = useId()
+  const uid = useId();
   const salesData = [
     {
       title: 'Product 1',
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+      description: 'description about product',
       image:
         'https://elements-cover-images-0.imgix.net/c031d43f-427a-4a2b-b428-61c29806a4a1?auto=compress%2Cformat&fit=max&w=900&s=2a9a6cb7aab80522a1d1a6e0f3552e4f',
       stock: 32,
@@ -14,23 +14,14 @@ const Table = () => {
     },
     {
       title: 'Product 2',
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+      description: 'description about product',
       image:
         'https://i.pinimg.com/1200x/71/1f/cf/711fcf265738a8dedd8695038c4ac28c.jpg',
       stock: 30,
       price: 54.59,
       total: 39
-    },
-    {
-      title: 'Product 3',
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-      image:
-        'https://i.pinimg.com/1200x/2d/4f/46/2d4f46487391afc61a74edddc31b1a0f.jpg',
-      stock: 12,
-      price: 30.99,
-      total: 23
     }
-  ]
+  ];
 
   return (
     <div className='mt-8 bg-white rounded-md px-6 py-4'>
@@ -49,14 +40,13 @@ const Table = () => {
                   fill='none'
                   viewBox='0 0 20 20'
                 >
-                  {' '}
                   <path
                     stroke='currentColor'
                     strokeLinecap='round'
                     strokeLinejoin='round'
                     strokeWidth='2'
                     d='m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z'
-                  />{' '}
+                  />
                 </svg>
               </div>
               <input
@@ -89,38 +79,6 @@ const Table = () => {
         </form>
       </div>
 
-      {/* <article className='overflow-auto'>
-
-            <div className='grid grid-cols-8 text-gray-600 mb-3 text-md'>
-                <div className='col-span-5 text-left'>
-                    Product Name
-                </div>
-                <div className='col-span-1'>Stock</div>
-                <div className='col-span-1'>Price</div>
-                <div className='col-span-1'>Total Sales</div>
-            </div>
-            <hr/>
-
-            {salesData.map((product)=><div className='grid grid-cols-8 p-1 md:py-4 md:px-2' key={uid}>
-                <div className='col-span-5 flex items-center'>
-                    <img 
-                    src={product.image} 
-                    alt={product.title} 
-                    loading={lazy} 
-                    className="rounded-md hidden md:block md:w-[80px]" 
-                    />                    
-                    <div className='flex flex-col ml-4'>
-                        <p className='text-md text-left font-semibold'>{product.title}</p>
-                        <p className='text-sm text-gray-400 text-left'>{product.description}</p>
-                    </div>
-                </div>
-                <div className='col-span-1 flex items-center'>{product.stock}</div>
-                <div className='col-span-1 flex items-center text-gray-950 font-semibold'>$ {product.price}</div>
-                <div className='col-span-1 flex items-center'>{product.total}</div>
-            </div>)
-            }
-        </article> */}
-
       <article>
         <div className='relative overflow-x-auto'>
           <table className='w-full'>
@@ -141,13 +99,16 @@ const Table = () => {
               </tr>
             </thead>
             <tbody>
-              {salesData.map(product => (
-                <tr className='bg-white dark:bg-gray-800 dark:border-gray-700 text-sm'>
+              {salesData.map((product, index) => (
+                <tr
+                  key={index}
+                  className='bg-white dark:bg-gray-800 dark:border-gray-700 text-sm'
+                >
                   <td className='py-2 w-auto md:w-20'>
                     <img
                       src={product.image}
                       alt={product.title}
-                      loading={lazy}
+                      loading='lazy'
                       className='rounded-md'
                     />
                   </td>
@@ -175,7 +136,7 @@ const Table = () => {
         </div>
       </article>
     </div>
-  )
-}
+  );
+};
 
-export default Table
+export default Table;
