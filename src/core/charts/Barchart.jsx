@@ -1,67 +1,35 @@
-import { useState } from 'react'
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-} from 'chart.js'
-import { Bar } from 'react-chartjs-2'
+import React, { useState } from 'react';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { Bar } from 'react-chartjs-2';
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
+// Registering required Chart.js components
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const data = {
+// Data for the bar chart
+const chartData = {
   labels: [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec'
+    'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
   ],
-  // datasets is an array of objects where each object represents a set of data to display corresponding to the labels above. for brevity, we'll keep it at one object
   datasets: [
     {
       label: '',
       data: [45, 20, 60, 50, 46, 100, 78, 135, 90, 50, 50, 50],
-      // you can set indiviual colors for each bar
-      backgroundColor: [
-        '#eef2ff',
-        '#eef2ff',
-        '#eef2ff',
-        '#eef2ff',
-        '#eef2ff',
-        '#eef2ff',
-        '#eef2ff',
-        '#4338ca',
-        '#eef2ff',
-        '#eef2ff',
-        '#eef2ff',
-        '#eef2ff'
-      ],
+      backgroundColor: '#b9cce2', // Individual colors for each bar can be set here
       borderWidth: 1,
       borderRadius: 10
     }
   ]
-}
+};
 
-export const options = {
+// Options for the bar chart
+const chartOptions = {
   responsive: true,
   plugins: {
     legend: {
-      // position: 'top',
       display: false
     },
     title: {
-      display: false, //true
+      display: false,
       text: ''
     },
     label: {},
@@ -98,11 +66,16 @@ export const options = {
       borderSkipped: 'bottom'
     }
   }
-}
+};
 
+// Barchart component
 const Barchart = () => {
-  const [chartData, setChartData] = useState(data)
-  return <Bar options={options} data={chartData} />
-}
+  // State for chart data
+  const [data, setData] = useState(chartData);
+  
+  return (
+    <Bar options={chartOptions} data={data} />
+  );
+};
 
-export default Barchart
+export default Barchart;
