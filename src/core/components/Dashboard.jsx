@@ -1,12 +1,12 @@
-import React from 'react';
-import DashCard from './DashCard';
-import { AiOutlineDollarCircle } from 'react-icons/ai';
-import { CgLoadbarDoc } from 'react-icons/cg';
-import { BiMoney } from 'react-icons/bi';
-import { TbShoppingBag } from 'react-icons/tb';
-import Table from './Table';
-import DashNavbar from './DashNavbar';
-import ChartSection from './ChartSection';
+import React from 'react'
+import DashCard from './DashCard'
+import { AiOutlineDollarCircle } from 'react-icons/ai'
+import { CgLoadbarDoc } from 'react-icons/cg'
+import { BiMoney } from 'react-icons/bi'
+import { TbShoppingBag } from 'react-icons/tb'
+import Table from './Table'
+import DashNavbar from './DashNavbar'
+import ChartSection from './ChartSection'
 
 const Dashboard = ({ isOpen, setIsOpen }) => {
   const cardList = [
@@ -38,7 +38,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
       amount: 89,
       rate: 11
     }
-  ];
+  ]
 
   return (
     <section className='flex justify-start flex-col h-screen w-full overflow-scroll py-4 px-8'>
@@ -58,7 +58,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
       </div>
       <Table />
     </section>
-  );
-};
+  )
+}
 
-export default Dashboard;
+export default Dashboard
