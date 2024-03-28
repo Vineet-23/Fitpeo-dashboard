@@ -1,14 +1,14 @@
+import React from 'react';
+
 const DashNavbar = () => {
   return (
     <nav className='py-2.5 dark:bg-gray-800 mb-8'>
       <div className='flex flex-wrap justify-between items-center'>
         <div className='flex justify-between items-center w-full'>
           <div className='flex items-center'>
-            <div>
-              <p className='text-white-950 text-sm md:text-xl font-semibold'>
-                Hello Shahrukh 👋,
-              </p>
-            </div>
+            <p className='text-white-950 text-sm md:text-xl font-semibold'>
+              Hello Shahrukh 👋,
+            </p>
           </div>
           <div className=''>
             <form action='#' method='GET' className='w-1/2 lg:pl-2'>
@@ -24,14 +24,13 @@ const DashNavbar = () => {
                     fill='none'
                     viewBox='0 0 20 20'
                   >
-                    {' '}
                     <path
                       stroke='currentColor'
                       strokeLinecap='round'
                       strokeLinejoin='round'
                       strokeWidth='2'
                       d='m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z'
-                    />{' '}
+                    />
                   </svg>
                 </div>
                 <input
@@ -47,7 +46,7 @@ const DashNavbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default DashNavbar
+export default DashNavbar;
