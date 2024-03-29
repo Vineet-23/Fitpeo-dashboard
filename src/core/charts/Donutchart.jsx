@@ -45,7 +45,7 @@ const DonutChart = () => {
             const ctx = chart.ctx
             const width = chart.width
             const height = chart.height
-            const fontSize = 18
+            const fontSize = 16
             ctx.font = fontSize + 'px Arial'
             ctx.fillStyle = 'black'
             ctx.textAlign = 'center'
