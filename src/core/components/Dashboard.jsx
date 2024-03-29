@@ -1,9 +1,9 @@
 import React from 'react'
 import DashCard from './DashCard'
-import { AiOutlineDollarCircle } from 'react-icons/ai'
-import { CgLoadbarDoc } from 'react-icons/cg'
-import { BiMoney } from 'react-icons/bi'
-import { TbShoppingBag } from 'react-icons/tb'
+import { FaRupeeSign } from 'react-icons/fa'
+import { BsBoxFill } from 'react-icons/bs'
+import { CiWallet } from 'react-icons/ci'
+import { FcSalesPerformance } from 'react-icons/fc'
 import Table from './Table'
 import DashNavbar from './DashNavbar'
 import ChartSection from './ChartSection'
@@ -12,33 +12,32 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
   const cardList = [
     {
       label: 'Earning',
-      icon: <AiOutlineDollarCircle />,
+      icon: <FaRupeeSign />,
       color: 'bg-green-100 text-green-700',
       amount: 198,
       rate: 37.8
     },
     {
       label: 'Orders',
-      icon: <CgLoadbarDoc />,
+      icon: <BsBoxFill />,
       color: 'bg-violet-100 text-violet-700',
       amount: 2024
     },
     {
       label: 'Balance',
-      icon: <BiMoney />,
+      icon: <CiWallet />,
       color: 'bg-blue-100 text-blue-700',
       amount: 2.4,
       rate: 2
     },
     {
       label: 'Total Sales',
-      icon: <TbShoppingBag />,
+      icon: <FcSalesPerformance />,
       color: 'bg-pink-100 text-pink-700',
       amount: 89,
       rate: 11
     }
   ]
-
   return (
     <section className='flex justify-start flex-col h-screen w-full overflow-scroll py-2 px-10'>
       <DashNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
