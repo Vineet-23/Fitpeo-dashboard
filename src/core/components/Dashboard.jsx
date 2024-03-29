@@ -40,7 +40,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
   ]
 
   return (
-    <section className='flex justify-start flex-col h-screen w-full overflow-scroll py-2 px-4'>
+    <section className='flex justify-start flex-col h-screen w-full overflow-scroll py-2 px-10'>
       <DashNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:flex-row flex-wrap'>
         {cardList.map((card, index) => (
