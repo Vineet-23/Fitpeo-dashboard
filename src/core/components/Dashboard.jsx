@@ -21,8 +21,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
       label: 'Orders',
       icon: <CgLoadbarDoc />,
       color: 'bg-violet-100 text-violet-700',
-      amount: 2.4,
-      rate: 2
+      amount: 2024
     },
     {
       label: 'Balance',
@@ -47,7 +46,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
         {cardList.map((card, index) => (
           <div
             key={index}
-            className='m-1 p-1 text-white rounded-m transition-all duration-500 bg-gradient-to-br to-rose-500 via-black from-rose-100 bg-size-200 hover:bg-right-bottom'
+            className='m-1 p-1 text-white rounded-m transition-all duration-500 bg-to-br to-pink-200 via-black from-pink-100 bg-size-500 hover:bg-gradient-to-br hover:to-blue-500 hover:from-blue-100 hover:bg-size-500'
           >
             <DashCard card={card} />
           </div>
