@@ -13,18 +13,18 @@ const DashCard = ({ card }) => {
         {icon}
       </div>
       <div className='pl-2'>
-         <p className='text-black-900 text-m text-left'>{label}</p>
-        <p className='text-black-800 text-2xl text-left font-semibold'>
+         <p className='text-black-900 text-sm text-left'>{label}</p>
+        <p className='text-black-800 text-m text-left font-semibold'>
           {amount ? `₹${amount}K` : ''}
         </p>
-        <p className='text-gray-800 text-2xl text-left font-semibold'>
+        <p className='text-gray-800 text-m text-left font-semibold'>
           {number}
         </p>
         <p className='flex justify-start items-center text-xm text-left'>
           <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-500`}>
             {rate > 10 ? <FaArrowTrendUp /> : <FaArrowTrendDown />}
           </span>
-          <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-700`}>{rate}%</span>
+          <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-500`}>{rate}%</span>
           <span>this month</span>
         </p>
       </div>
