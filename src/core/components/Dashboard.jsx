@@ -47,7 +47,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
         {cardList.map((card, index) => (
           <div
             key={index}
-            className='m-2 p-2 text-white rounded-m transition-all duration-500 bg-gradient-to-br to-rose-900 via-pink from-blue-100 bg-size-500 hover:bg-right-bottom'
+            className='m-2 p-2 text-white rounded-m transition-all duration-300 bg-gradient-to-br to-rose-900 via-pink from-blue-900 bg-size-500 hover:bg-right-bottom'
           >
             <DashCard card={card} />
           </div>
