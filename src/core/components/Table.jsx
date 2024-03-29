@@ -4,8 +4,8 @@ const Table = () => {
   const uid = useId();
   const salesData = [
     {
-      title: 'Product 1',
-      description: 'description about product',
+      title: 'Abstract 3D',
+      description: 'description about Abstract 3D',
       image:
         'https://elements-cover-images-0.imgix.net/c031d43f-427a-4a2b-b428-61c29806a4a1?auto=compress%2Cformat&fit=max&w=900&s=2a9a6cb7aab80522a1d1a6e0f3552e4f',
       stock: 32,
@@ -13,8 +13,8 @@ const Table = () => {
       total: 20
     },
     {
-      title: 'Product 2',
-      description: 'description about product',
+      title: 'Sarphens illustration',
+      description: 'description about Sarphens illustration',
       image:
         'https://i.pinimg.com/1200x/71/1f/cf/711fcf265738a8dedd8695038c4ac28c.jpg',
       stock: 30,
