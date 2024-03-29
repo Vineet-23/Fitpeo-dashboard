@@ -2,7 +2,7 @@ import React from 'react';
 
 const DashNavbar = () => {
   return (
-    <nav className='py-2.5 dark:bg-gray-800 mb-8'>
+    <nav className='py-2.5 dark:bg-pink-200 mb-8'>
       <div className='flex flex-wrap justify-between items-center'>
         <div className='flex justify-between items-center w-full'>
           <div className='flex items-center'>
