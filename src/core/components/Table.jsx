@@ -26,7 +26,7 @@ const Table = () => {
   return (
     <div className='mt-8 bg-white rounded-md px-6 py-4'>
       <div className='flex flex-wrap justify-between items-center mb-8'>
-        <h3 className='text-rose-900 text-left text-xl font-semibold'>
+        <h3 className='text-black-900 text-left text-xl font-semibold'>
           Product Sell
         </h3>
         <form className='lg:pl-2'>
@@ -82,7 +82,7 @@ const Table = () => {
       <article>
         <div className='relative overflow-x-auto'>
           <table className='w-full'>
-            <thead className='text-rose-600 text-sm border-b'>
+            <thead className='text-black-600 text-sm border-b'>
               <tr>
                 <th colSpan={2} scope='col' className='font-medium text-left'>
                   Product Name
@@ -102,7 +102,7 @@ const Table = () => {
               {salesData.map((product, index) => (
                 <tr
                   key={index}
-                  className='bg-white dark:bg-rose-800 dark:border-rose-700 text-sm'
+                  className='bg-white dark:bg-black-800 dark:border-black-700 text-sm'
                 >
                   <td className='py-2 w-auto md:w-20'>
                     <img
