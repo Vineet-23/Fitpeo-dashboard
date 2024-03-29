@@ -115,7 +115,7 @@ const Table = () => {
                   <td
                     colSpan={1}
                     scope='row'
-                    className='py-2 font-medium text-rose-900 whitespace-nowrap dark:text-white'
+                    className='py-2 font-medium text-black-900 whitespace-nowrap dark:text-white'
                   >
                     <div className='flex flex-col ml-4'>
                       <p className='text-md text-black-900 text-left font-semibold'>
