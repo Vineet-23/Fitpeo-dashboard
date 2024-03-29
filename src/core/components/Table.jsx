@@ -7,7 +7,7 @@ const Table = () => {
       title: 'Abstract 3D',
       description: 'description about Abstract 3D',
       image:
-        'https://www.google.com/imgres?imgurl=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2Fmax_1200%2F8cd0f126236951.5635357783b33.png&tbnid=Xt6SwlJQJR26UM&vet=12ahUKEwib7NvTv5mFAxVZ2TgGHcNLD1gQMygVegUIARCiAQ..i&imgrefurl=https%3A%2F%2Fwww.behance.net%2Fgallery%2F26236951%2FAbstract-3D-Shape&docid=IKRCH5MWLR3dsM&w=1200&h=750&q=abstract%203d&ved=2ahUKEwib7NvTv5mFAxVZ2TgGHcNLD1gQMygVegUIARCiAQ',
+        'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8cd0f126236951.5635357783b33.png',
       stock: 32,
       price: 45.99,
       total: 20
