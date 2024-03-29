@@ -11,11 +11,8 @@ const chartData = {
       label: '',
       data: [20, 50, 30],
       backgroundColor: ['#ec4899', '#3b82f6', '#eef2ff'],
-      borderWidth: [45, 25, 10],
-      borderColor: ['#ec4899', '#3b82f6', '#eef2ff'], 
-      borderJoinStyle: 'miter',
       borderRadius: 1,
-      spacing: 10
+      
     }
   ]
 }
