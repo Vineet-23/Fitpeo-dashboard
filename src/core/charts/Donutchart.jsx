@@ -12,7 +12,7 @@ const chartData = {
       data: [20, 50, 30],
       backgroundColor: ['#ec4899', '#3b82f6', '#eef2ff'],
       borderWidth: [45, 25, 10],
-      borderColor: ['#ec4899', '#7e22ce', '#eef2ff'], 
+      borderColor: ['#ec4899', '#3b82f6', '#eef2ff'], 
       borderJoinStyle: 'miter',
       borderRadius: 1,
       spacing: 10
@@ -22,7 +22,7 @@ const chartData = {
 
 const options = {
   responsive: true,
-  cutout: '65%',
+  cutout: '85%',
   plugins: {
     legend: {
       display: false
