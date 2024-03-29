@@ -10,7 +10,7 @@ const chartData = {
     {
       label: '',
       data: [20, 50, 30],
-      backgroundColor: ['#ec4899', '#7e22ce', '#eef2ff'],
+      backgroundColor: ['#ec4899', '#3b82f6', '#eef2ff'],
       borderWidth: 1
     }
   ]
@@ -45,7 +45,7 @@ const DonutChart = () => {
             const ctx = chart.ctx
             const width = chart.width
             const height = chart.height
-            const fontSize = 16
+            const fontSize = 12
             ctx.font = fontSize + 'px Arial'
             ctx.fillStyle = 'black'
             ctx.textAlign = 'center'
