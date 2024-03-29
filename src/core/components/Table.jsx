@@ -26,7 +26,7 @@ const Table = () => {
   return (
     <div className='mt-8 bg-white rounded-md px-6 py-4'>
       <div className='flex flex-wrap justify-between items-center mb-8'>
-        <h3 className='text-gray-900 text-left text-xl font-semibold'>
+        <h3 className='text-rose-900 text-left text-xl font-semibold'>
           Product Sell
         </h3>
         <form className='lg:pl-2'>
@@ -34,7 +34,7 @@ const Table = () => {
             <div className='relative mt-1'>
               <div className='flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none'>
                 <svg
-                  className='w-4 h-4 text-gray-500 dark:text-gray-400'
+                  className='w-4 h-4 text-rose-500 dark:text-rose-400'
                   aria-hidden='true'
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -53,7 +53,7 @@ const Table = () => {
                 type='text'
                 name='email'
                 id='table-search'
-                className='bg-gray-100 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
+                className='bg-rose-100 text-rose-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
                 placeholder='Search'
               />
             </div>
@@ -62,7 +62,7 @@ const Table = () => {
               <select
                 id='days'
                 defaultValue='30'
-                className='bg-gray-100 text-gray-900 text-sm rounded-lg outline-none block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                className='bg-rose-100 text-rose-900 text-sm rounded-lg outline-none block w-full p-2.5 dark:bg-rose-700 dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
               >
                 <option className='text-left' value='30' selected>
                   Last 30 days
@@ -82,7 +82,7 @@ const Table = () => {
       <article>
         <div className='relative overflow-x-auto'>
           <table className='w-full'>
-            <thead className='text-gray-600 text-sm border-b'>
+            <thead className='text-rose-600 text-sm border-b'>
               <tr>
                 <th colSpan={2} scope='col' className='font-medium text-left'>
                   Product Name
@@ -102,7 +102,7 @@ const Table = () => {
               {salesData.map((product, index) => (
                 <tr
                   key={index}
-                  className='bg-white dark:bg-gray-800 dark:border-gray-700 text-sm'
+                  className='bg-white dark:bg-rose-800 dark:border-rose-700 text-sm'
                 >
                   <td className='py-2 w-auto md:w-20'>
                     <img
@@ -115,13 +115,13 @@ const Table = () => {
                   <td
                     colSpan={1}
                     scope='row'
-                    className='py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white'
+                    className='py-2 font-medium text-rose-900 whitespace-nowrap dark:text-white'
                   >
                     <div className='flex flex-col ml-4'>
                       <p className='text-md text-left font-semibold'>
                         {product.title}
                       </p>
-                      <p className='text-xs text-gray-400 text-left'>
+                      <p className='text-xs text-rose-400 text-left'>
                         {product.description}
                       </p>
                     </div>
