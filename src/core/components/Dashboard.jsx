@@ -47,13 +47,13 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
         {cardList.map((card, index) => (
           <div
             key={index}
-            className='m-2 p-2 text-white rounded-m transition-all duration-300 bg-gradient-to-br to-rose-900 via-pink from-blue-900 bg-size-500 hover:bg-right-bottom'
+            className='m-1 p-1 text-white rounded-m transition-all duration-500 bg-gradient-to-br to-rose-500 via-black from-rose-100 bg-size-200 hover:bg-right-bottom'
           >
             <DashCard card={card} />
           </div>
         ))}
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-1 md:gap-5'>
+      <div className='grid grid-cols-1 md:grid-cols-3 md:gap-10'>
         <ChartSection />
       </div>
       <Table />
