@@ -1,9 +1,10 @@
 import React from 'react';
 import { useId } from 'react';
-import { AiOutlineArrowUp, AiOutlineArrowDown } from 'react-icons/ai';
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { FaArrowTrendDown } from "react-icons/fa6";
 
 const DashCard = ({ card }) => {
-  const { color, label, rate, amount, icon } = card;
+  const { color, label, rate, amount,number, icon } = card;
   const uid = useId();
 
   return (
@@ -12,11 +13,16 @@ const DashCard = ({ card }) => {
         {icon}
       </div>
       <div className='pl-2'>
-        <p className='text-gray-500 text-xs text-left'>{label}</p>
-        <p className='text-gray-800 text-2xl text-left font-semibold'>${amount}K</p>
+         <p className='text-black-900 text-m text-left'>{label}</p>
+        <p className='text-black-800 text-2xl text-left font-semibold'>
+          {amount ? `₹${amount}K` : ''}
+        </p>
+        <p className='text-gray-800 text-2xl text-left font-semibold'>
+          {number}
+        </p>
         <p className='flex justify-start items-center text-sm text-left'>
           <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-700`}>
-            {rate > 10 ? <AiOutlineArrowUp /> : <AiOutlineArrowDown />}
+            {rate > 10 ? <FaArrowTrendUp /> : <FaArrowTrendDown />}
           </span>
           <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-700`}>{rate}%</span>
           <span>this month</span>
