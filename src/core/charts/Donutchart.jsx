@@ -11,8 +11,9 @@ const chartData = {
       label: '',
       data: [20, 50, 30],
       backgroundColor: ['#ec4899', '#3b82f6', '#eef2ff'],
-      borderWidth: [45, 30, 15], // Adjusted border width to 1
+      borderWidth: [1, 1, 1], // Adjusted border width to 1
       borderColor: ['#ec4899', '#7e22ce', '#eef2ff'],
+      borderRadius: [10, 20, 30, 40], // Custom border radius for each corner
     }
   ]
 };
