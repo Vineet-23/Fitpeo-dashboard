@@ -21,7 +21,8 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
       label: 'Orders',
       icon: <BsBoxFill />,
       color: 'bg-violet-100 text-violet-700',
-      amount: 2024
+      amount: 23,
+      rate: 3
     },
     {
       label: 'Balance',
