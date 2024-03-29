@@ -4,7 +4,7 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { FaArrowTrendDown } from "react-icons/fa6";
 
 const DashCard = ({ card }) => {
-  const { color, label, rate, amount,number, icon } = card;
+  const { color, label, rate, amount, number, icon } = card;
   const uid = useId();
 
   return (
@@ -13,7 +13,7 @@ const DashCard = ({ card }) => {
         {icon}
       </div>
       <div className='pl-2'>
-         <p className='text-black-900 text-sm text-left'>{label}</p>
+        <p className='text-black-900 text-sm text-left'>{label}</p>
         <p className='text-black-800 text-m text-left font-semibold'>
           {amount ? `₹${amount}K` : ''}
         </p>
@@ -24,8 +24,12 @@ const DashCard = ({ card }) => {
           <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-700`}>
             {rate > 10 ? <FaArrowTrendUp /> : <FaArrowTrendDown />}
           </span>
-          <span className={`font-bold text-${rate < 10 ? 'green' : 'red'}-700`}>{rate}%</span>
-          <span className="text-xs">this month</span>
+          <span className={`font-bold ${rate > 10 ? 'text-green-700' : 'text-red-700'}`}>
+            {rate}%
+          </span>
+          <span className={`${rate > 10 ? 'text-green-700' : 'text-red-700'} text-xs`}>
+            this month
+          </span>
         </p>
       </div>
     </div>
