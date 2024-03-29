@@ -24,7 +24,7 @@ const DashCard = ({ card }) => {
           <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-700`}>
             {rate > 10 ? <FaArrowTrendUp /> : <FaArrowTrendDown />}
           </span>
-          <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-700`}>{rate}%</span>
+          <span className={`font-bold text-${rate < 10 ? 'green' : 'red'}-700`}>{rate}%</span>
           <span className="text-xs">this month</span>
         </p>
       </div>
