@@ -14,7 +14,20 @@ const chartData = {
     {
       label: '',
       data: [45, 20, 60, 50, 46, 100, 78, 135, 90, 50, 50, 50],
-      backgroundColor: '#b9cce2', // Individual colors for each bar can be set here
+      backgroundColor: [
+        '#fbcfe8',
+        '#fbcfe8',
+        '#fbcfe8',
+        '#fbcfe8',
+        '#fbcfe8',
+        '#fbcfe8',
+        '#fbcfe8',
+        '#ff6384',
+        '#fbcfe8',
+        '#fbcfe8',
+        '#fbcfe8',
+        '#fbcfe8'
+      ],
       borderWidth: 1,
       borderRadius: 10
     }
