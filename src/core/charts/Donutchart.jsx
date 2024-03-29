@@ -11,7 +11,7 @@ const chartData = {
       label: '',
       data: [20, 50, 30],
       backgroundColor: ['#ec4899', '#3b82f6', '#eef2ff'],
-      borderWidth: [3, 0, 3], // Adjusted border width to create overlap
+      borderWidth: [30, 20, 10], // Adjusted border width to create overlap
       borderColor: ['#ec4899', '#7e22ce', '#eef2ff'],
       borderAlign: 'inner', // Set border alignment to inner
       borderRadius: [10, 20, 30, 40], // Custom border radius for each corner
