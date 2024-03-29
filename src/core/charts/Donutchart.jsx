@@ -1,8 +1,8 @@
-import React from 'react'
-import { Doughnut } from 'react-chartjs-2'
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+import React from 'react';
+import { Doughnut } from 'react-chartjs-2';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 
-ChartJS.register(ArcElement, Tooltip, Legend)
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const chartData = {
   labels: ['Product 1', 'Product 2', 'Product 3'],
@@ -11,13 +11,11 @@ const chartData = {
       label: '',
       data: [20, 50, 30],
       backgroundColor: ['#ec4899', '#3b82f6', '#eef2ff'],
-      borderWidth: [45, 25, 10],
+      borderWidth: [1, 1, 1], // Adjusted border width to 1
       borderColor: ['#ec4899', '#7e22ce', '#eef2ff'],
-      borderRadius: 1,
-      
     }
   ]
-}
+};
 
 const options = {
   responsive: true,
@@ -34,7 +32,7 @@ const options = {
       display: false
     }
   }
-}
+};
 
 const DonutChart = () => {
   return (
@@ -45,23 +43,23 @@ const DonutChart = () => {
         {
           id: 'textInside',
           afterDraw: function (chart, _) {
-            const ctx = chart.ctx
-            const width = chart.width
-            const height = chart.height
-            const fontSize = 12
-            ctx.font = fontSize + 'px Arial'
-            ctx.fillStyle = 'black'
-            ctx.textAlign = 'center'
-            ctx.textBaseline = 'middle'
-            const text = '65% Total new customers'
-            const textX = Math.round(width / 2)
-            const textY = Math.round(height / 2)
-            ctx.fillText(text, textX, textY)
+            const ctx = chart.ctx;
+            const width = chart.width;
+            const height = chart.height;
+            const fontSize = 12;
+            ctx.font = fontSize + 'px Arial';
+            ctx.fillStyle = 'black';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            const text = '65% Total new customers';
+            const textX = Math.round(width / 2);
+            const textY = Math.round(height / 2);
+            ctx.fillText(text, textX, textY);
           }
         }
       ]}
     />
-  )
-}
+  );
+};
 
-export default DonutChart
+export default DonutChart;
