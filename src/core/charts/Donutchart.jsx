@@ -1,99 +1,64 @@
-import React, { useState } from 'react';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Doughnut } from 'react-chartjs-2';
+import React from 'react'
+import { Doughnut } from 'react-chartjs-2'
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 
-// Registering required Chart.js components
-ChartJS.register(ArcElement, Tooltip, Legend);
+ChartJS.register(ArcElement, Tooltip, Legend)
 
-// Data for the doughnut chart
 const chartData = {
   labels: ['Product 1', 'Product 2', 'Product 3'],
   datasets: [
     {
       label: '',
       data: [20, 50, 30],
-      backgroundColor: ['#60a5fa', '#ff6384', '#eef2ff'], // Individual colors for each segment
+      backgroundColor: ['#ec4899', '#7e22ce', '#eef2ff'],
       borderWidth: 1
     }
   ]
-};
+}
 
-// Options for the doughnut chart
-const chartOptions = {
+const options = {
   responsive: true,
-  cutout: '65%', // Adjusting the cutout size
+  cutout: '65%',
   plugins: {
     legend: {
       display: false
     },
     title: {
-      display: false,
-      text: ''
+      display: false
     },
     label: {},
     datasets: {
       display: false
-    },
-    doughnutlabel: {
-      labels: [
-        {
-          text: 65,
-          font: {
-            size: '40'
-          },
-          color: 'red'
-        },
-        {
-          text: 'Due ≤ 60 Days',
-          font: {
-            size: '25'
-          },
-          color: 'red'
-        }
-      ]
-    }
-  },
-  scales: {
-    x: {
-      border: {
-        display: false
-      },
-      grid: {
-        display: false
-      },
-      ticks: {
-        maxRotation: 0,
-        minRotation: 0,
-        autoSkip: false
-      }
-    },
-    y: {
-      border: {
-        display: false
-      },
-      grid: {
-        display: false
-      }
-    }
-  },
-  elements: {
-    center: {
-      text: 'center text',
-      border: false,
-      borderSkipped: 'bottom'
     }
   }
-};
+}
 
-// Donutchart component
-const Donutchart = () => {
-  // State for chart data
-  const [data, setData] = useState(chartData);
-  
+const DonutChart = () => {
   return (
-    <Doughnut options={chartOptions} data={data} />
-  );
-};
+    <Doughnut
+      options={options}
+      data={chartData}
+      plugins={[
+        {
+          id: 'textInside',
+          afterDraw: function (chart, _) {
+            const ctx = chart.ctx
+            const width = chart.width
+            const height = chart.height
+            const fontSize = 18
+            ctx.font = fontSize + 'px Arial'
+            ctx.fillStyle = 'black'
+            ctx.textAlign = 'center'
+            ctx.textBaseline = 'middle'
+            const text = '65% Total new customers'
+            const textX = Math.round(width / 2)
+            const textY = Math.round(height / 2)
+            ctx.fillText(text, textX, textY)
+          }
+        }
+      ]}
+    />
+  )
+}
 
-export default Donutchart;
-
+export default DonutChart
