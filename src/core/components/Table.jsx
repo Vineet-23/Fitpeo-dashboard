@@ -118,7 +118,7 @@ const Table = () => {
                     className='py-2 font-medium text-rose-900 whitespace-nowrap dark:text-white'
                   >
                     <div className='flex flex-col ml-4'>
-                      <p className='text-md text-left font-semibold'>
+                      <p className='text-md text-black-900 text-left font-semibold'>
                         {product.title}
                       </p>
                       <p className='text-xs text-rose-400 text-left'>
