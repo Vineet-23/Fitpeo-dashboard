@@ -18,7 +18,7 @@ const DashNavbar = () => {
               <div className='relative mt-1'>
                 <div className='flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none'>
                   <svg
-                    className='w-4 h-4 text-gray-500 dark:text-gray-400'
+                    className='w-4 h-4 text-rose-500 dark:text-rose-400'
                     aria-hidden='true'
                     xmlns='http://www.w3.org/2000/svg'
                     fill='none'
@@ -37,7 +37,7 @@ const DashNavbar = () => {
                   type='text'
                   name='email'
                   id='topbar-search'
-                  className='bg-white text-black-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
+                  className='bg-white text-black-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
                   placeholder='Search'
                 />
               </div>
