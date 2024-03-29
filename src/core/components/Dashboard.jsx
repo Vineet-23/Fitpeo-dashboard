@@ -34,7 +34,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
     {
       label: 'Total Sales',
       icon: <FcSalesPerformance />,
-      color: 'bg-pink-100 text-pink-700',
+      color: 'bg-pink-100 text-black-700',
       amount: 89,
       rate: 11
     }
