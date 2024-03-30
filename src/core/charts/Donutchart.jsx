@@ -11,7 +11,7 @@ const chartData = {
       label: '',
       data: [20, 50, 30],
       backgroundColor: ['#ec4899', '#3b82f6', '#eef2ff'],
-      borderColor: backgroundColor: ['#ec4899', '#3b82f6', '#eef2ff'],
+      borderColor: ['#ec4899', '#3b82f6', '#eef2ff'],
       
       
     }
