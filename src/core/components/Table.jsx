@@ -15,7 +15,8 @@ const Table = () => {
     {
       title: 'Sarphens illustration',
       description: 'description about Sarphens illustration',
-      image: 'https://thumbs.dreamstime.com/b/young-doctor-vector-illustration-65642526.jpg',
+      image:
+        'https://thumbs.dreamstime.com/b/young-doctor-vector-illustration-65642526.jpg',
       stock: 30,
       price: 54.59,
       total: 39
@@ -52,7 +53,7 @@ const Table = () => {
                 type='text'
                 name='email'
                 id='table-search'
-                className='bg-rose-100 text-rose-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
+                className='bg-rose-100 text-rose-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 w-full' // Modified width to be full width
                 placeholder='Search'
               />
             </div>
@@ -61,7 +62,7 @@ const Table = () => {
               <select
                 id='days'
                 defaultValue='30'
-                className='bg-rose-100 text-black-900 text-sm rounded-lg outline-none block w-full p-2.5 dark:bg-rose-200 dark:border-rose-200 dark:placeholder-rose-400 dark:text-black dark:focus:ring-rose-500 dark:focus:border-rose-500'
+                className='bg-rose-100 text-black-900 text-sm rounded-lg outline-none block w-full p-2.5 dark:bg-rose-200 dark:border-rose-200 dark:placeholder-rose-400 dark:text-black dark:focus:ring-rose-500 dark:focus:border-rose-500' // Modified width to be full width
               >
                 <option className='text-left' value='30'>
                   Last 30 days
