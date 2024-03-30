@@ -15,7 +15,7 @@ const Table = () => {
     {
       title: 'Sarphens illustration',
       description: 'description about Sarphens illustration',
-      image: 'https://thumbs.dreamstime.com/b/young-doctor-vector-illustration-65642526.jpg',
+      image: 'data:image/png;base64Jggg==',
       stock: 30,
       price: 54.59,
       total: 39
@@ -31,7 +31,7 @@ const Table = () => {
         <form className='lg:pl-2 w-full md:w-auto'>
           <div className='flex flex-col md:flex-row md:items-center md:gap-2'>
             <div className='relative'>
-              <div className='flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none bg-white'> {/* Modified */}
+              <div className='flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none'>
                 <svg
                   className='w-4 h-4 text-rose-500 dark:text-rose-400'
                   aria-hidden='true'
@@ -52,7 +52,7 @@ const Table = () => {
                 type='text'
                 name='email'
                 id='table-search'
-                className='bg-rose-100 text-black-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
+                className='bg-rose-100 text-rose-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
                 placeholder='Search'
               />
             </div>
