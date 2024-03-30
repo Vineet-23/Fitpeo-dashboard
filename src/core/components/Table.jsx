@@ -51,8 +51,8 @@ const Table = () => {
               <input
                 type='text'
                 name='email'
-                id='table-search'
-                className='bg-rose-100 text-rose-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
+                id='topbar-search'
+                className='bg-white text-black-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block text-left pl-9 p-2.5 outline-none dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
                 placeholder='Search'
               />
             </div>
