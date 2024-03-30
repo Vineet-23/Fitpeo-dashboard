@@ -5,7 +5,7 @@ const Table = () => {
   const salesData = [
     {
       title: 'Abstract 3D',
-      description: 'description about Abstract 3D',
+      description: 'Description goes here',
       image:
         'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8cd0f126236951.5635357783b33.png',
       stock: 32,
@@ -14,7 +14,7 @@ const Table = () => {
     },
     {
       title: 'Sarphens illustration',
-      description: 'description about Sarphens illustration',
+      description: 'Description goes here',
       image:
         'https://thumbs.dreamstime.com/b/young-doctor-vector-illustration-65642526.jpg',
       stock: 30,
