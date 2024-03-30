@@ -5,8 +5,8 @@ const DashNavbar = () => {
     <nav className='py-2.5 dark:bg-rose-100 mb-8'>
       <div className='flex flex-wrap justify-between items-center'>
         <div className='flex justify-between items-center w-full'>
-          <div className='flex items-center'>
-            <p className='text-white-950 text-sm md:text-xl font-semibold'>
+          <div className='flex md:flex-col items-center'> {/* Modified */}
+            <p className='text-white-950 text-sm md:text-xl font-semibold mb-2 md:mb-0'> {/* Modified */}
               Hello User 👋,
             </p>
           </div>
