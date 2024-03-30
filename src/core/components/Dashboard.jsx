@@ -21,7 +21,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
       label: 'Orders',
       icon: <BsBoxFill />,
       color: 'bg-violet-100 text-violet-700',
-      amount: 23,
+      number: 23,
       rate: 3
     },
     {
@@ -35,7 +35,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
       label: 'Total Sales',
       icon: <FcSalesPerformance />,
       color: 'bg-pink-100 text-black-700',
-      amount: 89,
+      number: 89,
       rate: 11
     }
   ]
