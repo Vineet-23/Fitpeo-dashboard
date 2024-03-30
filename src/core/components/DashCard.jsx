@@ -32,7 +32,9 @@ const DashCard = ({ card }) => {
           <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-900`}>
             {rate}%
           </span>
-          <span>this month</span>
+          <span className={`${rate > 10 ? 'text-green-700' : 'text-red-700'} text-xs`}>
+            this month
+          </span>
         </p>
       </div>
     </div>
