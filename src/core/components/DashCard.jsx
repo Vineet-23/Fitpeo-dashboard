@@ -12,19 +12,19 @@ const DashCard = ({ card }) => {
       <div className={`grid place-items-center rounded-full h-[120px] w-[120px] text-6xl ${color}`}>
         {icon}
       </div>
-      <div className='pl-2'>
+      div className='pl-2'>
         <p className='text-black-900 text-sm text-left'>{label}</p>
-        <p className='text-black-800 text-m text-left font-semibold'>
+        <p className='text-black-800 text-2xl text-left font-semibold'>
           {amount ? `₹${amount}K` : ''}
         </p>
-        <p className='text-gray-800 text-m text-left font-semibold'>
+        <p className='text-gray-800 text-2xl text-left font-semibold'>
           {number}
         </p>
-        <p className='flex justify-start items-center text-xm text-left'>
-          <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-700`}>
-            {rate > 10 ? <FaArrowTrendUp /> : <FaArrowTrendDown />}
+        <p className='flex justify-start items-center text-sm text-left'>
+          <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-900`}>
+            {rate > 10 ? <AiOutlineArrowUp /> : <FaArrowDown />}
           </span>
-          <span className={`font-bold ${rate > 10 ? 'text-green-700' : 'text-red-700'}`}>
+          <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-900`}>
             {rate}%
           </span>
           <span className={`${rate > 10 ? 'text-green-700' : 'text-red-700'} text-xs`}>
