@@ -62,7 +62,7 @@ const Table = () => {
               <select
                 id='days'
                 defaultValue='30'
-                className='bg-rose-100 text-rose-900 text-sm rounded-lg outline-none block w-full p-2.5 dark:bg-rose-700 dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                className='bg-rose-100 text-black-900 text-sm rounded-lg outline-none block w-full p-2.5 dark:bg-rose-200 dark:border-rose-200 dark:placeholder-rose-400 dark:text-black dark:focus:ring-rose-500 dark:focus:border-rose-500'
               >
                 <option className='text-left' value='30' selected>
                   Last 30 days
