@@ -18,7 +18,7 @@ const ChartSection = () => {
               <select
                 id='months'
                 defaultValue='3'
-                className='bg-black-100 text-gray-900 text-sm rounded-lg outline-none block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-pink-500 dark:focus:border-pink-500'
+                className='bg-rose-100 text-black-900 text-sm rounded-lg outline-none block w-full p-2.5 dark:bg-rose-700 dark:border-rose-600 dark:placeholder-rose-400 dark:text-white dark:focus:ring-pink-500 dark:focus:border-pink-500'
               >
                 <option className='text-left' value='3'>Quarterly</option>
                 <option className='text-left' value='6'>Half yearly</option>
