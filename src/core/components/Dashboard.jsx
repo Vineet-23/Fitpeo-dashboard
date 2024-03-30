@@ -21,21 +21,21 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
       label: 'Orders',
       icon: <BsBoxFill />,
       color: 'bg-violet-100 text-violet-700',
-      number: 23,
+      number: 2024,
       rate: 3
     },
     {
       label: 'Balance',
       icon: <CiWallet />,
       color: 'bg-blue-100 text-blue-700',
-      amount: 2.4,
+      amount: 20.24,
       rate: 2
     },
     {
       label: 'Total Sales',
       icon: <FcSalesPerformance />,
       color: 'bg-pink-100 text-black-700',
-      number: 89,
+      number: 9999,
       rate: 11
     }
   ]
