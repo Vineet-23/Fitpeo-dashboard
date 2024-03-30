@@ -1,18 +1,23 @@
-import React from 'react';
-import { useId } from 'react';
-import { FaArrowTrendUp } from "react-icons/fa6";
-import { FaArrowTrendDown } from "react-icons/fa6";
+import React from 'react'
+import { useId } from 'react'
+import { AiOutlineArrowUp } from 'react-icons/ai'
+import { FaArrowDown } from 'react-icons/fa'
 
 const DashCard = ({ card }) => {
-  const { color, label, rate, amount, number, icon } = card;
-  const uid = useId();
+  const { color, label, rate, amount, number, icon } = card
+  const uid = useId()
 
   return (
-    <div className='flex justify-evenly items-center px-2 py-4 rounded-md bg-white w-full' key={uid}>
-      <div className={`grid place-items-center rounded-full h-[120px] w-[120px] text-6xl ${color}`}>
+    <div
+      className='flex justify-evenly items-center px-2 py-4 rounded-md bg-white w-full'
+      key={uid}
+    >
+      <div
+        className={`grid place-items-center rounded-full h-[120px] w-[120px] text-6xl ${color}`}
+      >
         {icon}
       </div>
-      div className='pl-2'>
+      <div className='pl-2'>
         <p className='text-black-900 text-sm text-left'>{label}</p>
         <p className='text-black-800 text-2xl text-left font-semibold'>
           {amount ? `₹${amount}K` : ''}
@@ -27,13 +32,11 @@ const DashCard = ({ card }) => {
           <span className={`font-bold text-${rate > 10 ? 'green' : 'red'}-900`}>
             {rate}%
           </span>
-          <span className={`${rate > 10 ? 'text-green-700' : 'text-red-700'} text-xs`}>
-            this month
-          </span>
+          <span>this month</span>
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DashCard;
+export default DashCard
