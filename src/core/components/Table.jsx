@@ -15,7 +15,7 @@ const Table = () => {
     {
       title: 'Sarphens illustration',
       description: 'description about Sarphens illustration',
-      image: 'data:image/png;base64Jggg==',
+      image: 'https://thumbs.dreamstime.com/b/young-doctor-vector-illustration-65642526.jpg',
       stock: 30,
       price: 54.59,
       total: 39
