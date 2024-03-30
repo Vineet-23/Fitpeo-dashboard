@@ -20,7 +20,7 @@ const DashCard = ({ card }) => {
       <div className='pl-2'>
         <p className='text-black-900 text-sm text-left'>{label}</p>
         <p className='text-black-800 text-2xl text-left font-semibold'>
-          {amount ? `₹${amount}` : ''}
+          {amount ? `₹ ${amount}` : ''}
         </p>
         <p className='text-gray-800 text-2xl text-left font-semibold'>
           {number}
