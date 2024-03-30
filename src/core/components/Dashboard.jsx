@@ -14,7 +14,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
       label: 'Earning',
       icon: <FaRupeeSign />,
       color: 'bg-green-100 text-green-700',
-      amount: 198,
+      amount: 199,
       rate: 37.8
     },
     {
@@ -28,7 +28,7 @@ const Dashboard = ({ isOpen, setIsOpen }) => {
       label: 'Balance',
       icon: <CiWallet />,
       color: 'bg-blue-100 text-blue-700',
-      amount: 20.24,
+      amount: 555,
       rate: 2
     },
     {
