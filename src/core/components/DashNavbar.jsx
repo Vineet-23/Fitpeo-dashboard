@@ -7,7 +7,7 @@ const DashNavbar = () => {
         <div className='flex justify-between items-center w-full'>
           <div className='flex items-center'>
             <p className='text-white-950 text-sm md:text-xl font-semibold'>
-              Hello Shahrukh 👋,
+              Hello User 👋,
             </p>
           </div>
           <div className=''>
