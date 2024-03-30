@@ -102,7 +102,7 @@ const Table = () => {
               {salesData.map((product, index) => (
                 <tr
                   key={index}
-                  className='bg-white dark:bg-black-800 dark:border-black-700 text-sm'
+                  className='bg-black dark:bg-black-800 dark:border-black-700 text-sm'
                 >
                   <td className='py-2 w-auto md:w-20'>
                     <img
