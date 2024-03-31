@@ -46,14 +46,17 @@ const DonutChart = () => {
             const width = chart.width;
             const height = chart.height;
             const fontSize = 12;
-            ctx.font = fontSize + 'px Arial';
-            ctx.fillStyle = 'black bold';
+            ctx.font = 'bold ' + fontSize + 'px Arial'; // Bold font
+            ctx.fillStyle = 'black';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            const text = '65% Total new customers';
-            const textX = Math.round(width / 2);
-            const textY = Math.round(height / 2);
-            ctx.fillText(text, textX, textY);
+            const text1 = '^%%'; // First line text
+            const text2 = 'Total new customers'; // Second line text
+            const text1X = Math.round(width / 2);
+            const text2X = Math.round(width / 2);
+            const textY = Math.round(height / 2) - 10; // Adjusting position for two lines
+            ctx.fillText(text1, text1X, textY);
+            ctx.fillText(text2, text2X, textY + fontSize + 2); // Adding some space between lines
           }
         }
       ]}
