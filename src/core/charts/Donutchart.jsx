@@ -11,11 +11,7 @@ const chartData = {
       label: '',
       data: [20, 50, 30],
       backgroundColor: ['#ec4899', '#3b82f6', '#eef2ff'],
-      borderColor: ['#ec4899', '#3b82f6', '#eef2ff'],
-      
-      borderHeight: 10,
-      
-      
+      borderColor: ['#ec4899', '#3b82f6', '#eef2ff'],     
     }
   ]
 };
@@ -51,7 +47,7 @@ const DonutChart = () => {
             const height = chart.height;
             const fontSize = 12;
             ctx.font = fontSize + 'px Arial';
-            ctx.fillStyle = 'black';
+            ctx.fillStyle = 'black bold';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             const text = '65% Total new customers';
