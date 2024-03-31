@@ -45,12 +45,12 @@ const DonutChart = () => {
             const ctx = chart.ctx;
             const width = chart.width;
             const height = chart.height;
-            let fontSize = 14; // Default font size
+            let fontSize = 20; // Default font size
             ctx.font = 'bold ' + fontSize + 'px Arial'; // Bold font
             ctx.fillStyle = 'black';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            const text1 = '^%%'; // First line text
+            const text1 = '65%'; // First line text
             const text2 = 'Total new customers'; // Second line text
             const text1X = Math.round(width / 2);
             const text2X = Math.round(width / 2);
