@@ -12,6 +12,7 @@ const chartData = {
       data: [20, 50, 30],
       backgroundColor: ['#ec4899', '#3b82f6', '#eef2ff'],
       borderColor: ['#ec4899', '#3b82f6', '#eef2ff'],
+      borderWidth: 10,
       
       
     }
