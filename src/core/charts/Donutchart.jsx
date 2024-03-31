@@ -20,7 +20,7 @@ const chartData = {
 
 const options = {
   responsive: true,
-  cutout: '85%',
+  cutout: '60%',
   plugins: {
     legend: {
       display: false
