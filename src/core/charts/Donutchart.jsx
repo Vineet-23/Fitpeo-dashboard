@@ -50,7 +50,7 @@ const DonutChart = () => {
             ctx.fillStyle = 'black';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            const text1 = '^%%'; // First line text
+            const text1 = '65%'; // First line text
             const text2 = 'Total new customers'; // Second line text
             const text1X = Math.round(width / 2);
             const text2X = Math.round(width / 2);
